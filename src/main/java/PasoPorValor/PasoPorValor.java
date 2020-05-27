@@ -1,3 +1,5 @@
+package PasoPorValor;
+
 public class PasoPorValor {
     public static void main(String[] args) {
         int x = 10;
@@ -13,4 +15,3 @@ public class PasoPorValor {
 
     }
 }
- //prueba de cambio en git 

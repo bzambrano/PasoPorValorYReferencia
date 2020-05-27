@@ -2,15 +2,20 @@ package PasoPorRef;
 
 public class PasoPorReferencia {
     public static void main(String[] args) {
-        Persona p1 = new Persona();
-        CambiarNombrePersona(p1);
-        System.out.println(p1.toString());
+        Person person = new Person();
+        person.changeNamePerson("Juan");
+        System.out.println("The name person is ".concat(person.getName()));
+        System.out.println(person.toString());
+
+        modifyObject(person);
+        System.out.println("The new name of person is ".concat(person.getName()));
+        System.out.println(person.toString());
     }
 
-
-    private static void CambiarNombrePersona(Persona persona) {
-        persona.nombre = "Juan";
+    private static void modifyObject(Person personArg) {
+        personArg.changeNamePerson("Carlos");
     }
 
 
 }
+

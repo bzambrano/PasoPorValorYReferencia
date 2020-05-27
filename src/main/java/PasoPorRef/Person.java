@@ -1,20 +1,20 @@
 package PasoPorRef;
 
-public class Persona {
+public class Person {
     public String name;
-    public String apellido;
-    public int edad;
+    public String lastName;
+    public int age;
 
-    public Persona() {
+    public Person() {
         this.name = "Silvestre";
-        this.apellido = "Dangond";
-        this.edad = 30;
+        this.lastName = "Dangond";
+        this.age = 30;
     }
 
-    public Persona(String name, String apellido, int edad) {
+    public Person(String name, String lastName, int age) {
         this.name = name;
-        this.apellido = apellido;
-        this.edad = edad;
+        this.lastName = lastName;
+        this.age = age;
     }
 
 
@@ -28,10 +28,10 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + name + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", edad=" + edad +
+        return "Person{" +
+                "Name='" + name + '\'' +
+                ", Lastname='" + lastName + '\'' +
+                ", Age=" + age +
                 '}';
     }
 }
