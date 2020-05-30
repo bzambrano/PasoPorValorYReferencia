@@ -2,12 +2,11 @@ package UsedReturnWord;
 
 public class WordReturnClass {
     public static void main(String[] args) {
-        Sum sum = createObjetSum();
+        Sum sum = createObjetSum(4,7);
         System.out.println("Result the add is; " + sum.add());
     }
-    private static Sum createObjetSum() {
-        Sum sum = new Sum(4, 6);
-        return sum;
+    private static Sum createObjetSum(int a, int b) {
+        return new Sum(a,b);
     }
 }
 
@@ -20,6 +19,9 @@ class Sum {
     }
     public int add() {
         return (this.a + this.b);
+    }
+    public int add(int a, int b){
+        return (a+b);
     }
 }
 
